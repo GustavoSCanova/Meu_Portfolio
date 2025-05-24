@@ -144,38 +144,29 @@
             </div>
         </section>
 
-        <!-- Contato -->
-        <section id="contato" class="py-5">
-            <div class="container">
-                <h2 class="mb-4">Contato</h2>
-                <form id="form-contato">
-                    <div class="mb-3">
-                        <label for="nome" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="nome" placeholder="Seu nome" required />
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="email" placeholder="Seu e-mail" required />
-                    </div>
-                    <div class="mb-3">
-                        <label for="mensagem" class="form-label">Mensagem</label>
-                        <textarea class="form-control" id="mensagem" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
+        <div class="container-fluid">
+            <div class="d-flex justify-content-end">
+                <a id="btnTopo" class="btn btn-primary" href="#" role="button" style="display: none;">
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
 
-                <!-- Mensagem de status -->
-                <div id="mensagem-status" class="mt-3"></div>
+        <!-- Contato -->
+
+        <section id="contato" class="py-5">
+            <div class="container text-center">
+                <h2 class="mb-4">Contato</h2>
+                <p class="lead">Você pode entrar em contato comigo pelo e-mail abaixo:</p>
+
+                <div class="d-inline-block p-3 bg-white shadow rounded">
+                    <label for="email-contato" class="form-label fw-bold mb-1">E-mail:</label><br>
+                    <a id="email-contato" href="mailto:seuemail@email.com" class="text-decoration-none fs-5">
+                        gustavo123_c@outlook.com
+                    </a>
+                </div>
             </div>
         </section>
-
-        <div class="container-fluid">
-
-            <div class="d-flex justify-content-end">
-                <a class="btn btn-primary" href="#" role="button"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-            </div>
-
-        </div>
 
         <!-- Rodapé -->
 
