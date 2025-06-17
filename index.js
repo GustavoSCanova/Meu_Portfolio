@@ -6,7 +6,7 @@
       bot.classList.add("hide");
     }, 3000);
   });
-a
+
     const btnTopo = document.getElementById("btnTopo");
 
   window.addEventListener("scroll", () => {
