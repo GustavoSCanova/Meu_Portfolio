@@ -15,11 +15,36 @@ main {
   
 }
 
+.modal-body img {
+    width: auto;
+    max-height: 85vh;  /* Quase toda a tela */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.certificado-img {
+    max-height: 95vh;
+    width: auto;
+    height: auto;
+}
+
  body {
     font-family: 'Arial', sans-serif;
     padding-bottom: 2em; /* ajuste o valor de acordo com a altura do footer */
   /* ajuste o valor de acordo com a altura do footer */
- }
+  
+}
+
+.navbar-nav .nav-link {
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
 
  .chatbot {
     position: fixed;
