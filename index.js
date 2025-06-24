@@ -22,3 +22,8 @@
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
+
+    function mudarSlide(index) {
+        const carousel = new bootstrap.Carousel(document.getElementById('carouselCertificados'));
+        carousel.to(index);
+    }

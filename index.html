@@ -98,6 +98,8 @@
         </div>
 
 
+
+
         <!-- Cards de projetos -->
         <section id="projetos" class="py-5 bg-light">
             <div class="container">
@@ -283,24 +285,40 @@
 
                             </div>
 
-                            <div class="modal-footer justify-content-between">
-                                <button class="btn btn-primary" type="button" data-bs-target="#carouselCertificados"
-                                    data-bs-slide="prev">
-                                    ←
-                                </button>
-                                <button class="btn btn-primary" type="button" data-bs-target="#carouselCertificados"
-                                    data-bs-slide="next">
-                                    →
-                                </button>
-                            </div>
-                        </div>
+                            <!-- Paginador -->
 
+
+                            <nav aria-label="Navegação de certificados">
+
+                                <ul class="pagination justify-content-center mt-3">
+
+                                    <li class="page-item">
+                                        <button class="page-link" onclick="mudarSlide(0)">1</button>
+                                    </li>
+                                    <li class="page-item">
+                                        <button class="page-link" onclick="mudarSlide(1)">2</button>
+                                    </li>
+                                    <li class="page-item">
+                                        <button class="page-link" onclick="mudarSlide(2)">3</button>
+                                    </li>
+                                    <li class="page-item">
+                                        <button class="page-link" onclick="mudarSlide(3)">4</button>
+                                    </li>
+                                    <li class="page-item">
+                                        <button class="page-link" onclick="mudarSlide(4)">5</button>
+                                    </li>
+
+                                </ul>
+                            </nav>
+
+
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
-
-
+        </div>
 
         <!-- Contato -->
 
