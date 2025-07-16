@@ -32,12 +32,21 @@ window.addEventListener("scroll", () => {
 });
 
 // Rola suavemente para o topo quando clicado
-btnTopo.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.scrollTo({ top: 0, behavior: "smooth" });
+
+let carouselInstance;
+
+document.addEventListener("DOMContentLoaded", function () {
+  const carouselElement = document.getElementById('carouselCertificados');
+  if (carouselElement) {
+    carouselInstance = new bootstrap.Carousel(carouselElement, {
+      interval: false, // desativa autoplay se não quiser
+      wrap: false
+    });
+  }
 });
 
 function mudarSlide(index) {
-  const carousel = new bootstrap.Carousel(document.getElementById('carouselCertificados'));
-  carousel.to(index);
+  if (carouselInstance) {
+    carouselInstance.to(index);
+  }
 }
